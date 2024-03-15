@@ -1,0 +1,6 @@
+<div class="bg-primary w-full flex flex-col items-center min-h-screen p-2">
+<app-nuevo-tuit></app-nuevo-tuit>
+    @for (item of listadoTuits(); track $index) {
+    <app-tuit [tuit]="item"></app-tuit>
+    }
+</div>
